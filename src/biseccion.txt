@@ -1,0 +1,117 @@
+
+import java.text.DecimalFormat;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Jonny {
+
+    public static void main(String[] args) {
+        int longitud = 0;
+
+        double x1 = 0;
+        double xu = 0;
+        double f1;
+        double fu;
+        double Fnormal;
+        double xr1 = 0;
+        double Er;
+        double E;
+
+        boolean continuar = true;
+        double margen = 0;
+
+        Scanner ob = new Scanner(System.in);
+
+        boolean bandera = true;
+
+        while (bandera) {
+
+            try {
+
+                System.out.println("Digita el valor de x1");
+                x1 = ob.nextDouble();
+                bandera = false;
+                System.out.println(" digita el valor de xu= ");
+                xu = ob.nextDouble();
+                bandera = false;
+
+                System.out.println("Colocar el margen de error: ");
+                margen = ob.nextDouble();
+                bandera = false;
+
+            } catch (InputMismatchException e) {
+                ob.next();
+                System.err.println("El valor no es correcto!!! " + e);
+            }
+        }
+
+        // boolean bandera2 = true;
+        System.out.println("Coloca el Grado: ");
+        longitud = ob.nextInt();
+        double lista[] = new double[longitud + 1];
+
+        /*
+         * while (bandera2) { try {
+         */
+        for (int i = lista.length - 1; i >= 0; i--) {
+
+            System.out.println("");
+            System.out.println("Coloca el valor del grado: x^ " + (i));
+            // posicin donde
+            lista[i] = ob.nextInt();
+
+        }
+
+        DecimalFormat aux = new DecimalFormat("0.000000");
+        int iteracion = 0;
+        do {
+            iteracion++;
+
+            for (int i = 0; i < iteracion + 1; i++) {
+                xr1 = ((x1 + xu) / 2);
+            }
+
+            f1 = Bisec(lista, x1);
+            fu = Bisec(lista, xr1);
+
+            double productoF = f1 * fu;
+
+            if (productoF < 0) {
+                xu = xr1;
+            } else if (productoF > 0) {
+                x1 = xr1;
+            } else {
+                x1 = xu = xr1;
+                break;
+            }
+            xr1 = (x1 + xu) / 2;
+            E = Math.abs(xr1 - x1) / xr1;
+            Er = E * 100;
+            System.out.println("Iteracion: " + iteracion);
+            System.out.println("Tolerancia: " + margen);
+
+            System.out.println("Aproximacion raiz: " + x1);
+            System.out.println("Valor anterior: " + x1);
+            System.out.println("Valor posterior: " + xr1);
+            System.out.println("Error relativo: " + aux.format(Er) + "%" + "\n");
+
+        } while (Er >= margen);
+
+    }
+
+    public static double Bisec(double[] lista, double p) {
+        double resultado = 0;
+
+        for (int i = 0; i < lista.length; i++) {
+
+            System.out.print(lista[i] + "*" + p + "^" + i + "+");
+            double val = Math.pow(p, i);
+            val *= lista[i];
+            resultado += val;
+
+        }
+
+        return resultado;
+    }
+
+}
