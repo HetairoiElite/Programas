@@ -1,3 +1,4 @@
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -55,5 +56,61 @@ public class Funcion {
     }
 
     return resultado;
+  }
+
+  public static double[] Derivada(double[] valores) {
+    for (int i = 0; i < valores.length; i++) {
+      if (i == 0) {
+          valores[i] = 0;
+      }else{
+          //valores
+
+          //Hash
+      }
+    }
+
+    return valores;
+  }
+
+  public static Monomio[] PedirFuncionNewton() {
+    boolean continuar = true;
+    Monomio[] valores;
+
+    int tam = 0;
+    do {
+      try {
+        System.out.println("Inserte el grado de la funcion => ");
+        tam = consola.nextInt();
+        if (tam < 0) {
+          throw new Exception("No se admiten valores negativos.");
+        }
+        continuar = false;
+      } catch (InputMismatchException e) {
+        System.out.println("Error: Tipo de dato incorrecto.");
+        consola.nextLine();
+      } catch (Exception e) {
+        System.out.println(e.getMessage());
+      }
+    } while (continuar);
+    continuar = true;
+
+    valores = new Monomio[tam + 1];
+    
+
+    for (int i = valores.length - 1; 0 <= i; i--) {
+      do {
+        try {
+          System.out.println("Digite el valor para x^" + i);
+          double valor = consola.nextDouble();
+          continuar = false;
+          valores[i] = new Monomio(i,valor);
+        } catch (Exception e) {
+          System.out.println("Error: Tipo de dato incorrecto.");
+        }
+      } while (continuar);
+      continuar = true;
+    }
+
+    return valores;
   }
 }

@@ -8,8 +8,9 @@ public class Newton {
 
         double f;
         double f1;
-        double x;
-        double xr;
+        double x = 0;
+        double xr = 0;
+        double error = 0;
         double Ea;
         boolean bandera = true;
         int contador = 0;
@@ -44,7 +45,7 @@ public class Newton {
             Ea = Math.abs((xr - x) / xr) * 100;
             System.out.println("Ea = " + String.format("%.10f", Ea) + " %");
 
-            if (Ea < .0001) {
+            if (Ea < error) {
 
                 bandera = false;
 
