@@ -62,9 +62,10 @@ public class Funcion {
       if (valores[i].getExponente() == 0) {
         valores[i].setValor(0);
       } else {
-        //valores
-
-        //Hash
+        double valor = valores[i].getValor();
+        int exp = valores[i].getExponente();
+        valores[i].setValor(valor * exp);
+        valores[i].setExponente(exp - 1);
       }
     }
 
@@ -116,7 +117,7 @@ public class Funcion {
     double resultado = 0;
 
     for (int i = 0; i < valores.length; i++) {
-      System.out.print(valores[i] + "*" + x + "^" + i + "+");
+      System.out.print(valores[i].getValor() + "*" + x + "^" + i + "+");
       double val = Math.pow(x, valores[i].getExponente());
       val *= valores[i].getValor();
       resultado += val;

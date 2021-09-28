@@ -1,62 +1,60 @@
-
 import java.util.Scanner;
-
 
 public class Newton {
 
-    public static void main(String[] args) {
+  public static void main(String[] args) {
+    double f;
+    double f1;
+    double x = 0;
+    double xr = 0;
+    double error = 0;
+    double Ea;
+    boolean bandera = true;
+    int contador = 0;
 
-        double f;
-        double f1;
-        double x = 0;
-        double xr = 0;
-        double error = 0;
-        double Ea;
-        boolean bandera = true;
-        int contador = 0;
+    Scanner consola = new Scanner(System.in);
 
-        Scanner consola = new Scanner(System.in);
-        do {
+    Mapa[] valores = Funcion.PedirFuncionNewton();
 
-            contador++;
+    valores = Funcion.Derivada(valores);
 
-            System.out.println("iteracioines = " + contador);
+    valores = Funcion.Derivada(valores);
 
-            System.out.println("inserte el valor de x");
-            // double x = 1.420990;
-            x = consola.nextDouble();
+    do {
+      contador++;
 
-            // f = 3 * Math.pow(x, 2) - 17 * x + 20;
-            f = Math.log(x);
+      System.out.println("iteracioines = " + contador);
 
-            // System.out.println("fd = " + fd);
-            // f = Math.round(fd*10000000d) / 10000000d;
+      System.out.println("inserte el valor de x");
+      // double x = 1.420990;
+      x = consola.nextDouble();
 
-            // f1 = 6 * x - 17;
-            f1 = 1 / x;
+      // f = 3 * Math.pow(x, 2) - 17 * x + 20;
+      f = Math.log(x);
 
-            System.out.println("f = " + String.format("%.8f", f));
-            System.out.println("f1 = " + String.format("%.8f", f1));
+      // System.out.println("fd = " + fd);
+      // f = Math.round(fd*10000000d) / 10000000d;
 
-            xr = x - (f / f1);
+      // f1 = 6 * x - 17;
+      f1 = 1 / x;
 
-            System.out.println("xr = " + String.format("%.8f", xr));
+      System.out.println("f = " + String.format("%.8f", f));
+      System.out.println("f1 = " + String.format("%.8f", f1));
 
-            Ea = Math.abs((xr - x) / xr) * 100;
-            System.out.println("Ea = " + String.format("%.10f", Ea) + " %");
+      xr = x - (f / f1);
 
-            if (Ea < error) {
+      System.out.println("xr = " + String.format("%.8f", xr));
 
-                bandera = false;
+      Ea = Math.abs((xr - x) / xr) * 100;
+      System.out.println("Ea = " + String.format("%.10f", Ea) + " %");
 
-            }
+      if (Ea < error) {
+        bandera = false;
+      }
 
-            System.out.println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \n");
+      System.out.println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \n");
+    } while (bandera);
 
-        } while (bandera);
-
-        consola.close();
-
-    }
-
+    consola.close();
+  }
 }
