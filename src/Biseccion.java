@@ -23,7 +23,7 @@ public class Biseccion {
         boolean bandera = true;
         int contador = 0;
 
-        double[] valores = PedirFuncion();
+        double[] valores = Funcion.PedirFuncion();
 
         try {
             FileWriter fw = new FileWriter("Salida-biseccion.txt");
@@ -80,9 +80,9 @@ public class Biseccion {
                 //
                 // f1 = Math.log(x1);
                 // fu = Math.log(xr1);
-                f1 = CicloFuncion(valores, x1);
+                f1 = Funcion.CicloFuncion(valores, x1);
                 System.out.println();
-                fu = CicloFuncion(valores, xr1);
+                fu = Funcion.CicloFuncion(valores, xr1);
 
                 System.out.print("f(x1)= " + String.format("%.6f", f1) + "\t");
                 bw.write("\n" + "f(x1)= " + String.format("%.6f", f1) + "\t");
@@ -91,7 +91,7 @@ public class Biseccion {
                 F = f1 * fu;
 
                 System.out.println("f(x1) * f(xr) = " + String.format("%.10f", F));
-                bw.write("\n" + "f(x1)= " + String.format("%.10f", F));
+                bw.write("\n" + "f(x1) * f(xr) = " + String.format("%.10f", F));
 
                 if (F < 0) {
 
@@ -130,7 +130,7 @@ public class Biseccion {
 
                 xr2 = (x1 + xu) / 2;
                 System.out.println("xr =" + "(" + String.format("%.8f", x1) + "+" + String.format("%.8f", xu) + ")/2");
-                bw.write("\n" + "xr =" + "(" + String.format("%.8f", xr1) + "+" + String.format("%.8f", xu) + ")/2");
+                bw.write("\n" + "xr =" + "(" + String.format("%.8f", x1) + "+" + String.format("%.8f", xu) + ")/2");
 
                 System.out.println("xr = " + String.format("%.6f", xr2) + "\n");
                 bw.write("\n" + "xr = " + String.format("%.6f", xr2) + "\n");
@@ -166,58 +166,6 @@ public class Biseccion {
             System.out.println(e.getMessage());
         }
 
-    }
-
-    public static double[] PedirFuncion() {
-        boolean continuar = true;
-        double valores[];
-        int tam = 0;
-        do {
-            try {
-
-                System.out.println("Inserte el grado de la funcion => ");
-                tam = consola.nextInt();
-                continuar = false;
-
-            } catch (Exception e) {
-                System.out.println("Error: Tipo de dato incorrecto.");
-            }
-        } while (continuar);
-        continuar = true;
-
-        valores = new double[tam + 1];
-
-        for (int i = valores.length - 1; 0 <= i; i--) {
-            do {
-                try {
-
-                    System.out.println("Digite el valor para x^" + i);
-                    valores[i] = consola.nextDouble();
-                    continuar = false;
-
-                } catch (Exception e) {
-                    System.out.println("Error: Tipo de dato incorrecto.");
-                }
-            } while (continuar);
-            continuar = true;
-        }
-
-        return valores;
-
-    }
-
-    public static double CicloFuncion(double[] valores, double x) {
-        double resultado = 0;
-
-        for (int i = 0; i < valores.length; i++) {
-            System.out.print(valores[i] + "*" + x + "^" + i + "+");
-            double val = Math.pow(x, i);
-            val *= valores[i];
-            resultado += val;
-
-        }
-
-        return resultado;
     }
 
 }
