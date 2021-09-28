@@ -1,4 +1,3 @@
-
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -58,23 +57,23 @@ public class Funcion {
     return resultado;
   }
 
-  public static double[] Derivada(double[] valores) {
+  public static Mapa[] Derivada(Mapa[] valores) {
     for (int i = 0; i < valores.length; i++) {
-      if (i == 0) {
-          valores[i] = 0;
-      }else{
-          //valores
+      if (valores[i].getExponente() == 0) {
+        valores[i].setValor(0);
+      } else {
+        //valores
 
-          //Hash
+        //Hash
       }
     }
 
     return valores;
   }
 
-  public static Monomio[] PedirFuncionNewton() {
+  public static Mapa[] PedirFuncionNewton() {
     boolean continuar = true;
-    Monomio[] valores;
+    Mapa[] valores;
 
     int tam = 0;
     do {
@@ -94,8 +93,7 @@ public class Funcion {
     } while (continuar);
     continuar = true;
 
-    valores = new Monomio[tam + 1];
-    
+    valores = new Mapa[tam + 1];
 
     for (int i = valores.length - 1; 0 <= i; i--) {
       do {
@@ -103,7 +101,7 @@ public class Funcion {
           System.out.println("Digite el valor para x^" + i);
           double valor = consola.nextDouble();
           continuar = false;
-          valores[i] = new Monomio(i,valor);
+          valores[i] = new Mapa(i, valor);
         } catch (Exception e) {
           System.out.println("Error: Tipo de dato incorrecto.");
         }
@@ -112,5 +110,18 @@ public class Funcion {
     }
 
     return valores;
+  }
+
+  public static double CicloFuncionNewton(Mapa[] valores, double x) {
+    double resultado = 0;
+
+    for (int i = 0; i < valores.length; i++) {
+      System.out.print(valores[i] + "*" + x + "^" + i + "+");
+      double val = Math.pow(x, valores[i].getExponente());
+      val *= valores[i].getValor();
+      resultado += val;
+    }
+
+    return resultado;
   }
 }
