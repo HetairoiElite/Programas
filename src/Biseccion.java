@@ -20,10 +20,11 @@ public class Biseccion {
         double xr1;
         double xr2;
         double Ea;
+        double error;
         boolean bandera = true;
         int contador = 0;
 
-        double[] valores = Funcion.PedirFuncion();
+        
 
         try {
             FileWriter fw = new FileWriter("Salida-biseccion.txt");
@@ -36,6 +37,11 @@ public class Biseccion {
             System.out.println("inserte el valor de xu");
             // double x = 1.420990;
             xu = consola.nextDouble();
+            System.out.println("inserte el valor del rango de error: ");
+            // double x = 1.420990;
+            error = consola.nextDouble();
+
+            double[] valores = Funcion.PedirFuncion();
 
             System.out.println("x1 = " + x1);
             System.out.println("xu = " + xu);
@@ -145,7 +151,7 @@ public class Biseccion {
                 System.out.println("Ea = " + String.format("%.6f", Ea) + " %");
                 bw.write("\n" + "Ea = " + String.format("%.6f", Ea) + " %");
 
-                if (Ea < .001) {
+                if (Ea < error) {
 
                     System.out.println(String.format("%.6f", Ea) + "   es menor a .001%");
                     bw.write("\n" + String.format("%.6f", Ea) + " es menor a .001%");

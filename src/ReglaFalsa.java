@@ -17,11 +17,11 @@ public class ReglaFalsa {
         double xr1;
         double xr2;
         double Ea;
+        double error = 0;
         // int p = -1;
         boolean bandera = true;
         int contador = 0;
 
-        double[] valores = Funcion.PedirFuncion();
 
         Scanner consola = new Scanner(System.in);
         try {
@@ -29,13 +29,18 @@ public class ReglaFalsa {
             FileWriter fw = new FileWriter("Salida-biseccion.txt");
             BufferedWriter bw = new BufferedWriter(fw);
             // paso 1
-            System.out.println("inserte el valor de x1");
+            System.out.println("inserte el valor de x1: ");
             // double x = 1.420990;
             x1 = consola.nextDouble();
 
-            System.out.println("inserte el valor de xu");
+            System.out.println("inserte el valor de xu: ");
             // double x = 1.420990;
             xu = consola.nextDouble();
+            System.out.println("inserte el valor del rango de error: ");
+            // double x = 1.420990;
+            error = consola.nextDouble();
+
+            double[] valores = Funcion.PedirFuncion();
 
             bw.write("\n" + "x1 = " + x1);
             System.out.println("x1 = " + x1);
@@ -176,7 +181,7 @@ public class ReglaFalsa {
                 bw.write("\n" + "Ea = " + String.format("%.6f", Ea) + " %");
                 System.out.println("Ea = " + String.format("%.6f", Ea) + " %");
 
-                if (Ea < .0001) {
+                if (Ea < error) {
 
                     bw.write("\n" + String.format("%.6f", Ea) + "   es menor a .001%");
                     System.out.println(String.format("%.6f", Ea) + "   es menor a .001%");
