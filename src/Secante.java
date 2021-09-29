@@ -117,6 +117,7 @@ public class Secante {
 
             } while (bandera);
             consola.close();
+            bw.close();
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
