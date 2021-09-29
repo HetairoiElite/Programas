@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Luis Angel Bolaños Santiago
+ * @author @LuisAngBol
  */
 public class Biseccion {
 
@@ -80,12 +80,8 @@ public class Biseccion {
 
       // paso3
       do {
-        System.out.println(
-          "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \n"
-        );
-        bw.write(
-          "\n" + "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \n"
-        );
+        System.out.println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \n");
+        bw.write("\n" + "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \n");
         contador++;
 
         System.out.println("iteracioines = " + contador);
@@ -141,20 +137,9 @@ public class Biseccion {
           System.out.println("xu = " + String.format("%.6f", xu));
           bw.write("\n" + "xu = " + String.format("%.6f", xu));
           System.out.println(
-            "el subintervalo esta  [" +
-            String.format("%.6f", x1) +
-            "," +
-            String.format("%.6f", xr1) +
-            "] \n"
-          );
+              "el subintervalo esta  [" + String.format("%.6f", x1) + "," + String.format("%.6f", xr1) + "] \n");
           bw.write(
-            "\n" +
-            "el subintervalo esta [" +
-            String.format("%.6f", x1) +
-            "," +
-            String.format("%.6f", xr1) +
-            "] \n"
-          );
+              "\n" + "el subintervalo esta [" + String.format("%.6f", x1) + "," + String.format("%.6f", xr1) + "] \n");
         } else if (F > 0) {
           System.out.println(String.format("%.10f", F) + " > Es mayor a 0");
           bw.write("\n" + String.format("%.10f", F) + " > Es mayor a 0");
@@ -164,73 +149,26 @@ public class Biseccion {
           System.out.println("x1 = " + String.format("%.6f", x1));
           bw.write("\n" + "x1 = " + String.format("%.6f", x1));
           System.out.println(
-            "el subintervalo esta  [" +
-            String.format("%.6f", xr1) +
-            "," +
-            String.format("%.6f", xu) +
-            "] \n"
-          );
+              "el subintervalo esta  [" + String.format("%.6f", xr1) + "," + String.format("%.6f", xu) + "] \n");
 
           bw.write(
-            "\n" +
-            "el subintervalo esta  [" +
-            String.format("%.6f", xr1) +
-            "," +
-            String.format("%.6f", xu) +
-            "] \n"
-          );
+              "\n" + "el subintervalo esta  [" + String.format("%.6f", xr1) + "," + String.format("%.6f", xu) + "] \n");
         } else if (F == 0) {
-          System.out.println(
-            "el subintervalo esta xr " + String.format("%.6f", xr1)
-          );
-          bw.write(
-            "\n" + "el subintervalo esta xr " + String.format("%.6", xr1)
-          );
+          System.out.println("el subintervalo esta xr " + String.format("%.6f", xr1));
+          bw.write("\n" + "el subintervalo esta xr " + String.format("%.6", xr1));
         }
 
         xr2 = (x1 + xu) / 2;
-        System.out.println(
-          "xr =" +
-          "(" +
-          String.format("%.8f", x1) +
-          "+" +
-          String.format("%.8f", xu) +
-          ")/2"
-        );
-        bw.write(
-          "\n" +
-          "xr =" +
-          "(" +
-          String.format("%.8f", x1) +
-          "+" +
-          String.format("%.8f", xu) +
-          ")/2"
-        );
+        System.out.println("xr =" + "(" + String.format("%.8f", x1) + "+" + String.format("%.8f", xu) + ")/2");
+        bw.write("\n" + "xr =" + "(" + String.format("%.8f", x1) + "+" + String.format("%.8f", xu) + ")/2");
 
         System.out.println("xr = " + String.format("%.6f", xr2) + "\n");
         bw.write("\n" + "xr = " + String.format("%.6f", xr2) + "\n");
 
-        System.out.println(
-          "Ea = (|" +
-          String.format("%.6f", xr2) +
-          " - " +
-          String.format("%.6f", xr1) +
-          " | / " +
-          String.format("%.6f", xr2) +
-          " )* " +
-          " 100"
-        );
-        bw.write(
-          "\n" +
-          "Ea = (|" +
-          String.format("%.6f", xr2) +
-          " - " +
-          String.format("%.6f", xr1) +
-          " | / " +
-          String.format("%.6f", xr2) +
-          " )* " +
-          " 100"
-        );
+        System.out.println("Ea = (|" + String.format("%.6f", xr2) + " - " + String.format("%.6f", xr1) + " | / "
+            + String.format("%.6f", xr2) + " )* " + " 100");
+        bw.write("\n" + "Ea = (|" + String.format("%.6f", xr2) + " - " + String.format("%.6f", xr1) + " | / "
+            + String.format("%.6f", xr2) + " )* " + " 100");
 
         Ea = Math.abs((xr2 - xr1) / xr2) * 100;
 
@@ -245,12 +183,8 @@ public class Biseccion {
         }
 
         xr1 = xr2;
-        System.out.println(
-          "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \n"
-        );
-        bw.write(
-          "\n" + "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \n"
-        );
+        System.out.println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \n");
+        bw.write("\n" + "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \n");
       } while (bandera);
 
       consola.close();

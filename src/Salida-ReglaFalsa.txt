@@ -1,0 +1,510 @@
+
+x1 = 0.1
+xu = 5.5
+xr =  5.500000  __    (1.704748)(0.100000-5.500000)
+		      ------------------------------
+		            -2.302585  - 1.704748
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+iteraciones = 1
+  x1 = 0.100000	
+  xr = 3.202802
+f(x1)= -2.302585	
+f(xr) = 1.164026
+f(x1) * f(xr) = -2.6802686900
+-2.6802686900 < Es menor a 0[x1,xr],xu= xr 	
+xu = 3.202802
+el subintervalo esta  [0.100000,3.202802] 
+
+xr =  3.202802  __    (1.164026)(0.100000-3.202802)
+		      ------------------------------
+		            -2.302585  - 1.164026
+xr = 2.160936
+
+Ea = |(2.160936 - 3.202802  / 2.160936 )|*  100
+Ea = 48.213600 %
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+iteraciones = 2
+  x1 = 0.100000	
+  xr = 2.160936
+f(x1)= -2.302585	
+f(xr) = 0.770542
+f(x1) * f(xr) = -1.7742376296
+-1.7742376296 < Es menor a 0[x1,xr],xu= xr 	
+xu = 2.160936
+el subintervalo esta  [0.100000,2.160936] 
+
+xr =  2.160936  __    (0.770542)(0.100000-2.160936)
+		      ------------------------------
+		            -2.302585  - 0.770542
+xr = 1.644187
+
+Ea = |(1.644187 - 2.160936  / 1.644187 )|*  100
+Ea = 31.428893 %
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+iteraciones = 3
+  x1 = 0.100000	
+  xr = 1.644187
+f(x1)= -2.302585	
+f(xr) = 0.497246
+f(x1) * f(xr) = -1.1449508364
+-1.1449508364 < Es menor a 0[x1,xr],xu= xr 	
+xu = 1.644187
+el subintervalo esta  [0.100000,1.644187] 
+
+xr =  1.644187  __    (0.497246)(0.100000-1.644187)
+		      ------------------------------
+		            -2.302585  - 0.497246
+xr = 1.369941
+
+Ea = |(1.369941 - 1.644187  / 1.369941 )|*  100
+Ea = 20.018759 %
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+iteraciones = 4
+  x1 = 0.100000	
+  xr = 1.369941
+f(x1)= -2.302585	
+f(xr) = 0.314768
+f(x1) * f(xr) = -0.7247800133
+-0.7247800133 < Es menor a 0[x1,xr],xu= xr 	
+xu = 1.369941
+el subintervalo esta  [0.100000,1.369941] 
+
+xr =  1.369941  __    (0.314768)(0.100000-1.369941)
+		      ------------------------------
+		            -2.302585  - 0.314768
+xr = 1.217216
+
+Ea = |(1.217216 - 1.369941  / 1.217216 )|*  100
+Ea = 12.547128 %
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+iteraciones = 5
+  x1 = 0.100000	
+  xr = 1.217216
+f(x1)= -2.302585	
+f(xr) = 0.196566
+f(x1) * f(xr) = -0.4526101704
+-0.4526101704 < Es menor a 0[x1,xr],xu= xr 	
+xu = 1.217216
+el subintervalo esta  [0.100000,1.217216] 
+
+xr =  1.217216  __    (0.196566)(0.100000-1.217216)
+		      ------------------------------
+		            -2.302585  - 0.196566
+xr = 1.129343
+
+Ea = |(1.129343 - 1.217216  / 1.129343 )|*  100
+Ea = 7.780853 %
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+iteraciones = 6
+  x1 = 0.100000	
+  xr = 1.129343
+f(x1)= -2.302585	
+f(xr) = 0.121636
+f(x1) * f(xr) = -0.2800778434
+-0.2800778434 < Es menor a 0[x1,xr],xu= xr 	
+xu = 1.129343
+el subintervalo esta  [0.100000,1.129343] 
+
+xr =  1.129343  __    (0.121636)(0.100000-1.129343)
+		      ------------------------------
+		            -2.302585  - 0.121636
+xr = 1.077696
+
+Ea = |(1.077696 - 1.129343  / 1.077696 )|*  100
+Ea = 4.792421 %
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+iteraciones = 7
+  x1 = 0.100000	
+  xr = 1.077696
+f(x1)= -2.302585	
+f(xr) = 0.074825
+f(x1) * f(xr) = -0.1722909326
+-0.1722909326 < Es menor a 0[x1,xr],xu= xr 	
+xu = 1.077696
+el subintervalo esta  [0.100000,1.077696] 
+
+xr =  1.077696  __    (0.074825)(0.100000-1.077696)
+		      ------------------------------
+		            -2.302585  - 0.074825
+xr = 1.046924
+
+Ea = |(1.046924 - 1.077696  / 1.046924 )|*  100
+Ea = 2.939213 %
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+iteraciones = 8
+  x1 = 0.100000	
+  xr = 1.046924
+f(x1)= -2.302585	
+f(xr) = 0.045857
+f(x1) * f(xr) = -0.1055885873
+-0.1055885873 < Es menor a 0[x1,xr],xu= xr 	
+xu = 1.046924
+el subintervalo esta  [0.100000,1.046924] 
+
+xr =  1.046924  __    (0.045857)(0.100000-1.046924)
+		      ------------------------------
+		            -2.302585  - 0.045857
+xr = 1.028434
+
+Ea = |(1.028434 - 1.046924  / 1.028434 )|*  100
+Ea = 1.797878 %
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+iteraciones = 9
+  x1 = 0.100000	
+  xr = 1.028434
+f(x1)= -2.302585	
+f(xr) = 0.028037
+f(x1) * f(xr) = -0.0645586548
+-0.0645586548 < Es menor a 0[x1,xr],xu= xr 	
+xu = 1.028434
+el subintervalo esta  [0.100000,1.028434] 
+
+xr =  1.028434  __    (0.028037)(0.100000-1.028434)
+		      ------------------------------
+		            -2.302585  - 0.028037
+xr = 1.017265
+
+Ea = |(1.017265 - 1.028434  / 1.017265 )|*  100
+Ea = 1.097953 %
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+iteraciones = 10
+  x1 = 0.100000	
+  xr = 1.017265
+f(x1)= -2.302585	
+f(xr) = 0.017118
+f(x1) * f(xr) = -0.0394151294
+-0.0394151294 < Es menor a 0[x1,xr],xu= xr 	
+xu = 1.017265
+el subintervalo esta  [0.100000,1.017265] 
+
+xr =  1.017265  __    (0.017118)(0.100000-1.017265)
+		      ------------------------------
+		            -2.302585  - 0.017118
+xr = 1.010496
+
+Ea = |(1.010496 - 1.017265  / 1.010496 )|*  100
+Ea = 0.669846 %
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+iteraciones = 11
+  x1 = 0.100000	
+  xr = 1.010496
+f(x1)= -2.302585	
+f(xr) = 0.010442
+f(x1) * f(xr) = -0.0240427810
+-0.0240427810 < Es menor a 0[x1,xr],xu= xr 	
+xu = 1.010496
+el subintervalo esta  [0.100000,1.010496] 
+
+xr =  1.010496  __    (0.010442)(0.100000-1.010496)
+		      ------------------------------
+		            -2.302585  - 0.010442
+xr = 1.006386
+
+Ea = |(1.006386 - 1.010496  / 1.006386 )|*  100
+Ea = 0.408415 %
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+iteraciones = 12
+  x1 = 0.100000	
+  xr = 1.006386
+f(x1)= -2.302585	
+f(xr) = 0.006366
+f(x1) * f(xr) = -0.0146578245
+-0.0146578245 < Es menor a 0[x1,xr],xu= xr 	
+xu = 1.006386
+el subintervalo esta  [0.100000,1.006386] 
+
+xr =  1.006386  __    (0.006366)(0.100000-1.006386)
+		      ------------------------------
+		            -2.302585  - 0.006366
+xr = 1.003887
+
+Ea = |(1.003887 - 1.006386  / 1.003887 )|*  100
+Ea = 0.248924 %
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+iteraciones = 13
+  x1 = 0.100000	
+  xr = 1.003887
+f(x1)= -2.302585	
+f(xr) = 0.003880
+f(x1) * f(xr) = -0.0089332505
+-0.0089332505 < Es menor a 0[x1,xr],xu= xr 	
+xu = 1.003887
+el subintervalo esta  [0.100000,1.003887] 
+
+xr =  1.003887  __    (0.003880)(0.100000-1.003887)
+		      ------------------------------
+		            -2.302585  - 0.003880
+xr = 1.002367
+
+Ea = |(1.002367 - 1.003887  / 1.002367 )|*  100
+Ea = 0.151682 %
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+iteraciones = 14
+  x1 = 0.100000	
+  xr = 1.002367
+f(x1)= -2.302585	
+f(xr) = 0.002364
+f(x1) * f(xr) = -0.0054432853
+-0.0054432853 < Es menor a 0[x1,xr],xu= xr 	
+xu = 1.002367
+el subintervalo esta  [0.100000,1.002367] 
+
+xr =  1.002367  __    (0.002364)(0.100000-1.002367)
+		      ------------------------------
+		            -2.302585  - 0.002364
+xr = 1.001441
+
+Ea = |(1.001441 - 1.002367  / 1.001441 )|*  100
+Ea = 0.092415 %
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+iteraciones = 15
+  x1 = 0.100000	
+  xr = 1.001441
+f(x1)= -2.302585	
+f(xr) = 0.001440
+f(x1) * f(xr) = -0.0033163379
+-0.0033163379 < Es menor a 0[x1,xr],xu= xr 	
+xu = 1.001441
+el subintervalo esta  [0.100000,1.001441] 
+
+xr =  1.001441  __    (0.001440)(0.100000-1.001441)
+		      ------------------------------
+		            -2.302585  - 0.001440
+xr = 1.000878
+
+Ea = |(1.000878 - 1.001441  / 1.000878 )|*  100
+Ea = 0.056300 %
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+iteraciones = 16
+  x1 = 0.100000	
+  xr = 1.000878
+f(x1)= -2.302585	
+f(xr) = 0.000877
+f(x1) * f(xr) = -0.0020203358
+-0.0020203358 < Es menor a 0[x1,xr],xu= xr 	
+xu = 1.000878
+el subintervalo esta  [0.100000,1.000878] 
+
+xr =  1.000878  __    (0.000877)(0.100000-1.000878)
+		      ------------------------------
+		            -2.302585  - 0.000877
+xr = 1.000535
+
+Ea = |(1.000535 - 1.000878  / 1.000535 )|*  100
+Ea = 0.034297 %
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+iteraciones = 17
+  x1 = 0.100000	
+  xr = 1.000535
+f(x1)= -2.302585	
+f(xr) = 0.000535
+f(x1) * f(xr) = -0.0012307457
+-0.0012307457 < Es menor a 0[x1,xr],xu= xr 	
+xu = 1.000535
+el subintervalo esta  [0.100000,1.000535] 
+
+xr =  1.000535  __    (0.000535)(0.100000-1.000535)
+		      ------------------------------
+		            -2.302585  - 0.000535
+xr = 1.000326
+
+Ea = |(1.000326 - 1.000535  / 1.000326 )|*  100
+Ea = 0.020893 %
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+iteraciones = 18
+  x1 = 0.100000	
+  xr = 1.000326
+f(x1)= -2.302585	
+f(xr) = 0.000326
+f(x1) * f(xr) = -0.0007497231
+-0.0007497231 < Es menor a 0[x1,xr],xu= xr 	
+xu = 1.000326
+el subintervalo esta  [0.100000,1.000326] 
+
+xr =  1.000326  __    (0.000326)(0.100000-1.000326)
+		      ------------------------------
+		            -2.302585  - 0.000326
+xr = 1.000198
+
+Ea = |(1.000198 - 1.000326  / 1.000198 )|*  100
+Ea = 0.012727 %
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+iteraciones = 19
+  x1 = 0.100000	
+  xr = 1.000198
+f(x1)= -2.302585	
+f(xr) = 0.000198
+f(x1) * f(xr) = -0.0004566947
+-0.0004566947 < Es menor a 0[x1,xr],xu= xr 	
+xu = 1.000198
+el subintervalo esta  [0.100000,1.000198] 
+
+xr =  1.000198  __    (0.000198)(0.100000-1.000198)
+		      ------------------------------
+		            -2.302585  - 0.000198
+xr = 1.000121
+
+Ea = |(1.000121 - 1.000198  / 1.000121 )|*  100
+Ea = 0.007753 %
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+iteraciones = 20
+  x1 = 0.100000	
+  xr = 1.000121
+f(x1)= -2.302585	
+f(xr) = 0.000121
+f(x1) * f(xr) = -0.0002781933
+-0.0002781933 < Es menor a 0[x1,xr],xu= xr 	
+xu = 1.000121
+el subintervalo esta  [0.100000,1.000121] 
+
+xr =  1.000121  __    (0.000121)(0.100000-1.000121)
+		      ------------------------------
+		            -2.302585  - 0.000121
+xr = 1.000074
+
+Ea = |(1.000074 - 1.000121  / 1.000074 )|*  100
+Ea = 0.004722 %
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+iteraciones = 21
+  x1 = 0.100000	
+  xr = 1.000074
+f(x1)= -2.302585	
+f(xr) = 0.000074
+f(x1) * f(xr) = -0.0001694589
+-0.0001694589 < Es menor a 0[x1,xr],xu= xr 	
+xu = 1.000074
+el subintervalo esta  [0.100000,1.000074] 
+
+xr =  1.000074  __    (0.000074)(0.100000-1.000074)
+		      ------------------------------
+		            -2.302585  - 0.000074
+xr = 1.000045
+
+Ea = |(1.000045 - 1.000074  / 1.000045 )|*  100
+Ea = 0.002877 %
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+iteraciones = 22
+  x1 = 0.100000	
+  xr = 1.000045
+f(x1)= -2.302585	
+f(xr) = 0.000045
+f(x1) * f(xr) = -0.0001032240
+-0.0001032240 < Es menor a 0[x1,xr],xu= xr 	
+xu = 1.000045
+el subintervalo esta  [0.100000,1.000045] 
+
+xr =  1.000045  __    (0.000045)(0.100000-1.000045)
+		      ------------------------------
+		            -2.302585  - 0.000045
+xr = 1.000027
+
+Ea = |(1.000027 - 1.000045  / 1.000027 )|*  100
+Ea = 0.001752 %
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+iteraciones = 23
+  x1 = 0.100000	
+  xr = 1.000027
+f(x1)= -2.302585	
+f(xr) = 0.000027
+f(x1) * f(xr) = -0.0000628776
+-0.0000628776 < Es menor a 0[x1,xr],xu= xr 	
+xu = 1.000027
+el subintervalo esta  [0.100000,1.000027] 
+
+xr =  1.000027  __    (0.000027)(0.100000-1.000027)
+		      ------------------------------
+		            -2.302585  - 0.000027
+xr = 1.000017
+
+Ea = |(1.000017 - 1.000027  / 1.000017 )|*  100
+Ea = 0.001067 %
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+iteraciones = 24
+  x1 = 0.100000	
+  xr = 1.000017
+f(x1)= -2.302585	
+f(xr) = 0.000017
+f(x1) * f(xr) = -0.0000383010
+-0.0000383010 < Es menor a 0[x1,xr],xu= xr 	
+xu = 1.000017
+el subintervalo esta  [0.100000,1.000017] 
+
+xr =  1.000017  __    (0.000017)(0.100000-1.000017)
+		      ------------------------------
+		            -2.302585  - 0.000017
+xr = 1.000010
+
+Ea = |(1.000010 - 1.000017  / 1.000010 )|*  100
+Ea = 0.000650 %
+0.000650   es menor a .001%
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 

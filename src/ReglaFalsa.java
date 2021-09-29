@@ -5,8 +5,7 @@ import java.util.Scanner;
 
 /**
  *
- * * @author Luis Angel Bolaños Santiago
- * * @HetairoiElite
+ * * @author Luis Angel Bolaños Santiago * @HetairoiElite
  */
 public class ReglaFalsa {
 
@@ -86,10 +85,12 @@ public class ReglaFalsa {
 
                         // f1 = 7 * Math.pow(x1, p) - 2.15;
                         // fu = 7 * Math.pow(xu, p) - 2.15;
-                        // f1 = Math.log(x1);
+
                         f1 = Funcion.CicloFuncion(valores, x1);
                         fu = Funcion.CicloFuncion(valores, xu);
-                        System.out.println(f1);
+                        // System.out.println(f1);
+                        // f1 = Math.log(x1);
+
                         // fu = Math.log(xu);
 
                         xr1 = xu - ((fu * (x1 - xu)) / (f1 - fu));
@@ -131,7 +132,7 @@ public class ReglaFalsa {
                                 bw.write("\n" + "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \n");
                                 System.out.println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \n");
                                 contador++;
-                                // fu=Math.log(xr1);
+                                // fu = Math.log(xr1);
                                 // fu = 7 * Math.pow(xr1, p) - 2.15;
 
                                 bw.write("\n" + "iteraciones = " + contador);
@@ -161,7 +162,7 @@ public class ReglaFalsa {
                                         xu = xr1;
                                         // fu = 7 * Math.pow(xu, p) - 2.15;
                                         fu = Funcion.CicloFuncion(valores, xu);
-                                        // fu=Math.log(xu);
+                                        // fu = Math.log(xu);
                                         bw.write("\n" + "xu = " + String.format("%.6f", xu));
                                         System.out.println("xu = " + String.format("%.6f", xu));
                                         bw.write("\n" + "el subintervalo esta  [" + String.format("%.6f", x1) + ","
@@ -176,7 +177,7 @@ public class ReglaFalsa {
                                         x1 = xr1;
                                         f1 = Funcion.CicloFuncion(valores, x1);
                                         // f1 = 7 * Math.pow(x1, p) - 2.15;
-                                        // f1=Math.log(x1);
+                                        // f1 = Math.log(x1);
 
                                         bw.write("\n" + "x1 = " + String.format("%.6f", x1));
                                         System.out.println("x1 = " + String.format("%.6f", x1));
