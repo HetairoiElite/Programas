@@ -41,6 +41,7 @@ public class ReglaFalsa {
                                         consola.nextLine();
                                 }
                         } while (continuar);
+                        continuar = true;
 
                         do {
                                 try {
@@ -53,6 +54,7 @@ public class ReglaFalsa {
                                         consola.nextLine();
                                 }
                         } while (continuar);
+                        continuar = true;
 
                         do {
                                 try {
@@ -69,6 +71,7 @@ public class ReglaFalsa {
                                         System.out.println(e.getMessage());
                                 }
                         } while (continuar);
+                        continuar = true;
 
                         double[] valores = Funcion.PedirFuncion();
 

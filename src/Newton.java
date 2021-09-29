@@ -17,12 +17,23 @@ public class Newton {
         Scanner consola = new Scanner(System.in);
 
         Mapa[] valores = Funcion.PedirFuncionNewton();
-    
+
         Mapa[] valoresD = Funcion.Derivada(valores);
 
-        System.out.println("inserte el valor de x");
-        // double x = 1.420990;
-        x = consola.nextDouble();
+        do {
+            try {
+                System.out.println("inserte el valor de x");
+                // double x = 1.420990;
+                x = consola.nextDouble();
+                continuar = false;
+            } catch (InputMismatchException e) {
+                System.out.println("Tipo de dato incorrecto: " + e.getMessage());
+                consola.nextLine();
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+            }
+        } while (continuar);
+        continuar = true;
 
         do {
             try {
@@ -39,6 +50,7 @@ public class Newton {
                 System.out.println(e.getMessage());
             }
         } while (continuar);
+        continuar = true;
         do {
             contador++;
             System.out.println("iteraciones = " + contador);

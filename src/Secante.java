@@ -31,6 +31,7 @@ public class Secante {
                 consola.nextLine();
             }
         } while (continuar);
+        continuar = true;
 
         do {
             try {
@@ -43,6 +44,7 @@ public class Secante {
                 consola.nextLine();
             }
         } while (continuar);
+        continuar = true;
 
         do {
             try {
@@ -59,6 +61,7 @@ public class Secante {
                 System.out.println(e.getMessage());
             }
         } while (continuar);
+        continuar = true;
 
         double[] valores = Funcion.PedirFuncion();
         do {
