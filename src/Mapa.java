@@ -27,4 +27,8 @@ public class Mapa {
   public double getValor() {
     return valor;
   }
+
+  public Mapa getClone(int exp, double val) {
+    return new Mapa(exp, val);
+  }
 }

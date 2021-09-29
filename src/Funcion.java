@@ -58,18 +58,23 @@ public class Funcion {
   }
 
   public static Mapa[] Derivada(Mapa[] valores) {
+
+    Mapa[] auxValores = new Mapa[valores.length];
     for (int i = 0; i < valores.length; i++) {
-      if (valores[i].getExponente() == 0) {
-        valores[i].setValor(0);
+      Mapa aux = valores[i].getClone(valores[i].getExponente(), valores[i].getValor());
+
+      if (aux.getExponente() == 0) {
+        aux.setValor(0);
       } else {
-        double valor = valores[i].getValor();
-        int exp = valores[i].getExponente();
-        valores[i].setValor(valor * exp);
-        valores[i].setExponente(exp - 1);
+        double valor = aux.getValor();
+        int exp = aux.getExponente();
+        aux.setValor(valor * exp);
+        aux.setExponente(exp - 1);
       }
+      auxValores[i] = aux;
     }
 
-    return valores;
+    return auxValores;
   }
 
   public static Mapa[] PedirFuncionNewton() {

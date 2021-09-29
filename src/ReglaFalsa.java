@@ -220,8 +220,8 @@ public class ReglaFalsa {
                                 System.out.println("Ea = " + String.format("%.6f", Ea) + " %");
 
                                 if (Ea < error) {
-                                        bw.write("\n" + String.format("%.6f", Ea) + "   es menor a .001%");
-                                        System.out.println(String.format("%.6f", Ea) + "   es menor a .001%");
+                                        bw.write("\n" + String.format("%.6f", Ea) + "   es menor a " + error);
+                                        System.out.println(String.format("%.6f", Ea) + "   es menor a" + error);
 
                                         bandera = false;
                                 }
